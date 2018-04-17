@@ -10,11 +10,11 @@ nav ul li{
     border-bottom: 1px solid #444;
     background-color: #1d2026;
     font-size: 30px;
-    
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 nav ul li:hover{
     background-color: #555;
-    transition-duration: 0.5s;
 }
 
 nav ul{

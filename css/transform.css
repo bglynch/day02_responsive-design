@@ -1,0 +1,59 @@
+body{
+    /*background: linear-gradient(45deg, blue,gray,violet, white);*/
+    background: radial-gradient(blue,gray,violet, white);
+    height: 100vh;
+}
+
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 30px auto;
+    transition-property: all; /*proprty put here so ease in AND ease out of trans.*/
+    transition-duration: 2s;
+    /*transition-delay: 0.5s;*/
+    transition-timing-function: ease-in-out;
+    /*transition: all 2s ease-in-out*/
+
+}
+.rotate{
+    position: relative;
+    transform: rotate(30deg);
+    z-index: 3;
+}
+.rotate:hover{
+    transform: rotate(360deg);
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 1;
+}
+.eye{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    z-index: 2;
+    top:200px;
+}
+.left-eye{
+    left:450px;
+    
+}
+.right-eye{
+    right:450px;
+}
+.skew:hover{
+    transform: skew(5deg, 10deg);
+}
+.scale:hover{
+    transform: scale(1.5, 0.4);
+}
+.multiple:hover{
+    transform: rotate(30deg) skew(5deg, 10deg) scale(1.5, 0.4);
+}
+.circle{
+    border-radius: 50%;
+}
+.perspective:hover{
+    transform: perspective(100px) rotateX(20deg)
+}

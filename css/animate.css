@@ -1,0 +1,46 @@
+html{
+    background-color: white;
+}
+
+.box{
+    background: linear-gradient(to bottom, red, white);
+    height: 200px;
+    width: 200px;
+    left: 80%;
+    top: 20%;
+    position: absolute;
+    animation: movingbox 5s infinite;
+}
+
+.bouncingball{
+    width:100px;
+    height: 100px;
+    top: 0%;
+    background-color: black;
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce{
+    0%{top: 0%;}
+    45%{top: 89%;transform: scale(1, 1);background:black;}
+    50%{top: 90%;transform: scale(1.5, 0.4); background:linear-gradient(black,white);}
+    55%{top: 85%;transform: scale(1, 1);background:black;}
+    100%{top: 0%;}
+    
+}
+
+@keyframes movingbox{
+    0%{left:80%; transform: rotate(0deg);}
+    50%{left:0%; transform: rotate(-360deg); border-radius: 50%;}
+    100%{left:80%; transform: rotate(0deg);}
+}
+
+/*@keyframes movingbox{*/
+/*    0%{left: 80%;}*/
+/*    25%{top: 50%}*/
+/*    50%{left: 0%; top: 20%}*/
+/*    100%{left: 80%;}*/
+/*}*/
